@@ -12,7 +12,7 @@ Screen_height = 600
 Grau = 125,125,125
 Weiss = 255,255,255
 screen= pg.display.set_mode((Screen_width,Screen_height))
-pygame.display.set_caption("MOORHUHN")
+pg.display.set_caption("MOORHUHN")
 clock = pg.time.Clock()
 pg.mouse.set_visible(True)
 Hintergrund = pg.image.load("Bilder/wiese.jpg")
