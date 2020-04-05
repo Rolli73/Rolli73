@@ -1,5 +1,5 @@
 import sys
-import sys
+
 
 def adition(wert1,wert2):
     ergebnis = wert1+wert2
