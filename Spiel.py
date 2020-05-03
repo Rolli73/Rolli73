@@ -29,11 +29,11 @@ def main():
     screen= pg.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
     pg.display.set_caption("MOORHUHN")
     clock = pg.time.Clock()
-    pg.mouse.set_visible(False)
+    #pg.mouse.set_visible(False)
 
     hintergrund = pg.image.load("Bilder/wiese.jpg")
-    fadenkreuz  = figur("Bilder/Daco50x49_full.png",100,100)
-    biene   = figur("Bilder/Biene_full.png",50,250)
+    fadenkreuz  = figur("Bilder/Daco50x49.png",100,100)
+    biene   = figur("Bilder/Biene.png",50,250)
     
     Isrunning = True
     while Isrunning:
@@ -48,7 +48,7 @@ def main():
             if event.type == pg.MOUSEMOTION:
                 fadenkreuz.rect.center = event.pos
 
-            if pg.sprite.collide_rect(fadenkreuz,biene):
+            if pg.sprite.collide_circle_ratio(0.3)(fadenkreuz,biene):
                 
                 Isrunning = False
             else:

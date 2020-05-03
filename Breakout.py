@@ -183,14 +183,14 @@ while spielaktiv:
             # Meldung für Sieg
             print("Gewonnen - herzlichen Glückwunsch") 
    
-    if naechsterschritt == True:   
-        ball_x_alt = ball_x
-        ball_y_alt = ball_y
-        ball_x += ball_x_richtung
-        ball_y += ball_y_richtung
-        spiel_figur_1_x_alt = spiel_figur_1_x
-        spiel_figur_1_x += spiel_figur_richtung
-   
+    #if naechsterschritt == True:   
+    ball_x_alt = ball_x
+    ball_y_alt = ball_y
+    ball_x += ball_x_richtung
+    ball_y += ball_y_richtung
+    spiel_figur_1_x_alt = spiel_figur_1_x
+    spiel_figur_1_x += spiel_figur_richtung
+
    
    
    # naechsterschritt= False
