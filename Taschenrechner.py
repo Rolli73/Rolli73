@@ -1,7 +1,9 @@
 import sys
 
+A: int
+B: int
 
-def adition(wert1,wert2):
+def adition(wert1 , wert2):
     ergebnis = wert1+wert2
     return ergebnis
 
@@ -9,20 +11,20 @@ def subtraktion(wert1,wert2):
     ergebnis = wert1-wert2
     return ergebnis
 
-def multiplikation(wert1,wert2):
+def multiplikation(wert1, wert2):
     ergebnis = wert1*wert2
     return ergebnis
 
-def division(wert1,wert2):
+def division(wert1, wert2):
     ergebnis = wert1/wert2
     return ergebnis
 
 def eingabe():
-       global a,b
+       global  A, B
        while True:
            try:
-              a = int(input("1. Zahl : "))
-              b = int(input("2. Zahl : "))
+              A = int(input("1. Zahl : "))
+              B = int(input("2. Zahl : "))
            except ValueError:
                print("Fehler: Zahl muss eine Ganzzahl sein!!")
            else:
